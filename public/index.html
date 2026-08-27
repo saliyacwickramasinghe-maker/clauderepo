@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee IT Support Portal</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-mark">IT</div>
+        <div>
+          <h1>Employee IT Support Portal</h1>
+          <p class="subtitle">Chat with the IT Support Genie</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <span id="status" class="status status-connecting">Connecting…</span>
+        <button id="new-conversation" class="btn-secondary">New conversation</button>
+      </div>
+    </header>
+
+    <main class="chat-shell">
+      <div id="messages" class="messages"></div>
+
+      <form id="chat-form" class="composer">
+        <textarea
+          id="chat-input"
+          placeholder="Describe your IT issue or ask a question…"
+          rows="1"
+          autofocus
+        ></textarea>
+        <button type="submit" id="send-btn" class="btn-primary">Send</button>
+      </form>
+    </main>
+  </div>
+
+  <template id="message-template">
+    <div class="message">
+      <div class="avatar"></div>
+      <div class="bubble-wrap">
+        <div class="bubble"></div>
+        <button type="button" class="raw-toggle" hidden>View raw</button>
+        <pre class="raw-log" hidden></pre>
+      </div>
+    </div>
+  </template>
+
+  <script src="/app.js"></script>
+</body>
+</html>

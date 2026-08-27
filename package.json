@@ -1,0 +1,10 @@
+{
+  "name": "employee-it-support-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Microsite for chatting with the IT Support Workato Genie",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
